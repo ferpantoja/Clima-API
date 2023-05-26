@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon_io (2)/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon_io (2)/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon_io (2)/favicon-16x16.png">
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <script src="./JS/script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <title>How is the Weather?</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <h2>Confira o clima de uma cidade:</h2>
+
+            <div class="search-container">
+                <input type="text" class="search-field" placeholder="Digite a cidade">
+                <button id="search-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+
+            <div id="weather-informations-container" class="hide">
+
+                <div class="city">
+                    <h2>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span id="city"></span>
+                     <img src="" alt="country-flag" id="country"> 
+                       
+                    </h2>
+                </div>
+
+                <div class="temperature">
+                    <p id="temperature"><span></span></p>
+                </div>
+
+                <div class="sky">
+                     <p id="description-sky"></p>
+                     <img src="" alt="weather-conditions" id="weather-icon">
+                </div>
+
+                <div class="rain-wind-container">
+
+                    <div class="humidity"> 
+                        <i class="fa-solid fa-droplet"></i>
+                        <span></span>
+                    </div>
+
+                    <div class="wind">
+                        <i class="fa-solid fa-wind"></i>
+                        <span></span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div id="error-message" class="hide">
+            <p>Não foi possível encontrar o clima de uma cidade com este nome.</p>
+          </div>
+          <div id="loader" class="hide">
+            <i class="fa-solid fa-spinner"></i>
+          </div>
+    </div>
+</body>
+</html>
